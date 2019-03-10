@@ -36,11 +36,8 @@ public class UserController {
 		userService.deleteUserById(id);
 	}
 	 
-	 /**
-		 * PUT
-		 *//*
-			 * @RequestMapping(value = "/users/{id}", method = RequestMethod.PUT) public
-			 * void updateUserById(@RequestBody User user, @PathVariable String id) {
-			 * userService.updateUserById(user, id); }
-			 */
+	@RequestMapping(value = "/users/{id}", method = RequestMethod.PUT)
+	public void updateUserById(@RequestBody User user, @PathVariable Integer id) {
+		userService.updateUserById(user, id);
+	}
 }

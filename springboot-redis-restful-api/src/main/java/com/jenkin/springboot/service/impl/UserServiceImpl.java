@@ -67,4 +67,9 @@ public class UserServiceImpl implements UserService {
 	public void deleteUserById(int id) {
 		this.map.remove(id);
 	}
+	
+	@Override
+	public void updateUserById(User user, int id) {
+		this.map.put(id, user);
+	}
 }
