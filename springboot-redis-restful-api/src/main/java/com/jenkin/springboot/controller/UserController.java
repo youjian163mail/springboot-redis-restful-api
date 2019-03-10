@@ -17,14 +17,14 @@ public class UserController {
 	public UserService userService;
 
 	@RequestMapping(value = "/users", method = RequestMethod.GET)
-	public Map<String, User> getAll() {
+	public Map<Integer, User> getAll() {
 		return userService.getAll();
 	}
 
-	/*
-	 * @RequestMapping("/users/{id}") public User getUserById(@PathVariable String
-	 * id) { return userService.getUserById(id); }
-	 */
+	@RequestMapping("/users/{id}")
+	public User getUserById(@PathVariable Integer id) {
+		return userService.getUserById(id);
+	}
 
 	/**
 	 * POST
