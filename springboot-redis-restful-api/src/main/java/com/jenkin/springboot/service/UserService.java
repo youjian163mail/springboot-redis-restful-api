@@ -7,8 +7,9 @@ import java.util.Map;
 public interface UserService {
     Map<Integer, User> getAll();
 
+	void addUser(User user);
+	
 	/*
-	 * void addUser(User user);
 	 * 
 	 * void deleteUserById(String id);
 	 * 

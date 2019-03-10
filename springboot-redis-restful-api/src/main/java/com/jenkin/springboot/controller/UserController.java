@@ -26,16 +26,10 @@ public class UserController {
 		return userService.getUserById(id);
 	}
 
-	/**
-	 * POST
-	 */
-	/*
-	 * @RequestMapping(value = "/users", method = RequestMethod.POST) public void
-	 * addUser(@RequestBody User user) { userService.addUser(user); }
-	 * 
-	 *//**
-		 * DELETE
-		 */
+	@RequestMapping(value = "/users", method = RequestMethod.POST)
+	public void addUser(@RequestBody User user) {
+		userService.addUser(user);
+	}
 	/*
 	 * @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE) public
 	 * void deleteUserById(@PathVariable String id) {

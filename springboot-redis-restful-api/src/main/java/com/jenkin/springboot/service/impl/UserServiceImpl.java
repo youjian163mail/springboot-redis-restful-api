@@ -57,6 +57,7 @@ public class UserServiceImpl implements UserService {
 		return this.map;
 	}
 	
-	//public void addUser(User user) {
-		//hashOperations.put("USERS", user.getId(), user); }
+	public void addUser(User user) {
+		this.map.put(user.getId(), user);
+	}
 }
