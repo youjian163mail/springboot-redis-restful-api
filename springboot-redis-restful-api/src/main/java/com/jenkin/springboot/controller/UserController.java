@@ -30,12 +30,13 @@ public class UserController {
 	public void addUser(@RequestBody User user) {
 		userService.addUser(user);
 	}
-	/*
-	 * @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE) public
-	 * void deleteUserById(@PathVariable String id) {
-	 * userService.deleteUserById(id); }
-	 * 
-	 *//**
+	
+	@RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
+	public void deleteUserById(@PathVariable Integer id) {
+		userService.deleteUserById(id);
+	}
+	 
+	 /**
 		 * PUT
 		 *//*
 			 * @RequestMapping(value = "/users/{id}", method = RequestMethod.PUT) public

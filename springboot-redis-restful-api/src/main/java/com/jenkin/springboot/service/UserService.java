@@ -7,14 +7,15 @@ import java.util.Map;
 public interface UserService {
     Map<Integer, User> getAll();
 
+    User getUserById(int id);
+
 	void addUser(User user);
 	
+	void deleteUserById(int id);
+	
 	/*
-	 * 
-	 * void deleteUserById(String id);
 	 * 
 	 * void updateUserById(User user, String id);
 	 * 
 	 */
-	 User getUserById(int id);
 }

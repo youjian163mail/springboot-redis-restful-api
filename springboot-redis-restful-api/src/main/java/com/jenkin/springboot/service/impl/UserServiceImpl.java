@@ -19,17 +19,14 @@ public class UserServiceImpl implements UserService {
 	 * @Override public void addUser(User user) { hashOperations.put("USERS",
 	 * user.getId(), user); }
 	 * 
-	 * @Override public void deleteUserById(String id) {
-	 * hashOperations.delete("USERS", id); }
+	 
 	 * 
 	 * @Override public void updateUserById(User user, String id) {
 	 * hashOperations.put("USERS", id, user); }
 	 */
 	
-	@Override 
-	public User getUserById(int id) {
-		return this.map.get(id);
-	}
+	
+	
 	
 	private Map<Integer, User> map;
 	
@@ -56,8 +53,18 @@ public class UserServiceImpl implements UserService {
 	public Map<Integer, User> getAll() {
 		return this.map;
 	}
+
+	@Override
+	public User getUserById(int id) {
+		return this.map.get(id);
+	}
 	
 	public void addUser(User user) {
 		this.map.put(user.getId(), user);
+	}
+
+	@Override
+	public void deleteUserById(int id) {
+		this.map.remove(id);
 	}
 }
