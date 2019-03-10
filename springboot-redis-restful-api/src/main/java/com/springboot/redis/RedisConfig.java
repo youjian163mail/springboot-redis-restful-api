@@ -12,11 +12,6 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;*/
 import com.springboot.pojo.RedisConfigBean;
 import com.springboot.pojo.User;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/15 14:12
- * @description:
- */
 @Configuration
 public class RedisConfig {
 
