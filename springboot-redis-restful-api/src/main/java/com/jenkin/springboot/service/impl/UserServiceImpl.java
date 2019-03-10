@@ -2,17 +2,12 @@ package com.jenkin.springboot.service.impl;
 
 import com.jenkin.springboot.pojo.User;
 import com.jenkin.springboot.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.data.redis.core.HashOperations;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/14 13:32
- * @description:
- */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -40,19 +35,19 @@ public class UserServiceImpl implements UserService {
 		map = new HashMap<>();
 		
 		User user = null;
-		user = new User("user1", 10, "user1@email.com");
+		user = new User(1, "user1", 10, "user1@email.com");
 		map.put(user.getName(), user);
 		
-		user = new User("user2", 20, "user2@email.com");
+		user = new User(2, "user2", 20, "user2@email.com");
 		map.put(user.getName(), user);
 		
-		user = new User("user3", 30, "user3@email.com");
+		user = new User(3, "user3", 30, "user3@email.com");
 		map.put(user.getName(), user);
 		
-		user = new User("user4", 40, "user4@email.com");
+		user = new User(4, "user4", 40, "user4@email.com");
 		map.put(user.getName(), user);
 		
-		user = new User("user5", 50, "user5@email.com");
+		user = new User(5, "user5", 50, "user5@email.com");
 		map.put(user.getName(), user);
 	}
 	

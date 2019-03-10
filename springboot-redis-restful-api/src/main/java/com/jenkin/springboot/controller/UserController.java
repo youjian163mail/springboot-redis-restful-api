@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/14 13:12
- * @description:
- */
 @RestController
 public class UserController {
 
@@ -21,21 +16,11 @@ public class UserController {
 	@Autowired
 	public UserService userService;
 
-	/**
-	 * GET
-	 * 
-	 * @return
-	 */
-	@RequestMapping("/users")
+	@RequestMapping(value = "/users", method = RequestMethod.GET)
 	public Map<String, User> getAll() {
 		return userService.getAll();
 	}
 
-	/**
-	 * GET
-	 * 
-	 * @return
-	 */
 	/*
 	 * @RequestMapping("/users/{id}") public User getUserById(@PathVariable String
 	 * id) { return userService.getUserById(id); }

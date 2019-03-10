@@ -4,32 +4,29 @@ import org.springframework.context.annotation.Configuration;
 
 import java.io.Serializable;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/14 13:21
- * @description:
- */
 @Configuration
 public class User implements Serializable {
-
-    private String id;
+	private static final long serialVersionUID = -3226813254755712900L;
+	
+	private int id;
     private String name;
-    private Integer age;
+    private int age;
     private String email;
 
     public User() {};
 
-    public User(String name, Integer age, String email) {
+    public User(int id, String name, int age, String email) {
+    	this.id = id;
         this.name = name;
         this.age = age;
         this.email = email;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -41,11 +38,11 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

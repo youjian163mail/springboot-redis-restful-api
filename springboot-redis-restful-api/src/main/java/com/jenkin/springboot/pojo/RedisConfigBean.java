@@ -1,15 +1,8 @@
 package com.jenkin.springboot.pojo;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/16 09:32
- * @description:
- */
 @Component
-//@ConfigurationProperties(prefix = "spring.redis")
 public class RedisConfigBean {
     private int database;
     private String host;

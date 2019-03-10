@@ -4,11 +4,6 @@ import com.jenkin.springboot.pojo.User;
 
 import java.util.Map;
 
-/**
- * @author: jenkinwang
- * @date: 2018/10/14 13:32
- * @description:
- */
 public interface UserService {
     Map<String, User> getAll();
 
