@@ -1,7 +1,5 @@
-package com.jenkin.springboot.redis;
+package com.springboot.redis;
 
-import com.jenkin.springboot.pojo.RedisConfigBean;
-import com.jenkin.springboot.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,6 +8,9 @@ import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;*/
+
+import com.springboot.pojo.RedisConfigBean;
+import com.springboot.pojo.User;
 
 /**
  * @author: jenkinwang

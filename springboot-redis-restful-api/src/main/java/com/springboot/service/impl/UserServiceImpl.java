@@ -1,7 +1,8 @@
-package com.jenkin.springboot.service.impl;
+package com.springboot.service.impl;
 
-import com.jenkin.springboot.pojo.User;
-import com.jenkin.springboot.service.UserService;
+import com.springboot.pojo.User;
+import com.springboot.service.UserService;
+
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.data.redis.core.HashOperations;
 import org.springframework.stereotype.Service;

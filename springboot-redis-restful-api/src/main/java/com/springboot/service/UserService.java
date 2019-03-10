@@ -1,8 +1,8 @@
-package com.jenkin.springboot.service;
-
-import com.jenkin.springboot.pojo.User;
+package com.springboot.service;
 
 import java.util.Map;
+
+import com.springboot.pojo.User;
 
 public interface UserService {
     Map<Integer, User> getAll();

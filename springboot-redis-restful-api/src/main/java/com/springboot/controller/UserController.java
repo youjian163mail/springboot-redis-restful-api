@@ -1,7 +1,8 @@
-package com.jenkin.springboot.controller;
+package com.springboot.controller;
 
-import com.jenkin.springboot.pojo.User;
-import com.jenkin.springboot.service.UserService;
+import com.springboot.pojo.User;
+import com.springboot.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

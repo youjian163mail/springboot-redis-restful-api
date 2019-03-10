@@ -1,4 +1,4 @@
-package com.jenkin.springboot.pojo;
+package com.springboot.pojo;
 
 import org.springframework.context.annotation.Configuration;
 
